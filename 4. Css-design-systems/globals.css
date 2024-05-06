@@ -1,0 +1,340 @@
+:root {
+    --black: #181818;
+    --neutral: #fafafa;
+    --neutral-gray: #a3a3a3;
+    --primary: #0070D2;
+    --primary-10: #005FB2;
+    --red: #C23934;
+    --red-10: #A61A14;
+    --green: #4BCA81;
+    --green-10: #04844B;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: #fafafa;
+}
+
+.wrapper__content {
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+    gap: 24px;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.large{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.medium{
+    width: 70%;
+    height: 70%;
+    border-radius: 14px;
+}
+
+.small{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+
+
+.buttons{
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.blue,
+.white,
+.red,
+.green{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 20rem;
+    padding: 10px; 
+}
+
+.default,
+.hover,
+.press,
+.disabled{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   width: 20rem;
+   padding: 10px;
+}
+
+/*----------------BLUE------------------*/
+
+.default-one-blue{
+  background-color: var(--primary-10);
+  border-radius: 5px;
+  border: 0px;
+  width: 4vw;
+  height: 5vh;
+  color: white;
+  cursor: pointer;  
+}
+.default-two-blue, 
+.default-three-blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 5px;
+    border: 0px;
+    gap: 8px;
+    width: 6vw;
+    height: 5vh;
+    color: white;
+    cursor: pointer; 
+}
+
+.default-two-blue:hover,
+.default-three-blue:hover{
+    background-color: var(--primary-10);   
+}
+
+.default-two-blue:active,
+.default-three-blue:active{
+    transform: translate(3px, 3px, 3px,);
+   box-shadow: 1px 1px 5px black;
+}
+
+.default-three-blue:disabled{
+    background-color: var(--neutral-gray);
+}
+
+/*----------------BLUE------------------*/
+
+/*----------------WHITE------------------*/
+
+.default-one-white{
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid;
+    border-color: var(--primary-10);
+    width: 4vw;
+    height: 5vh;
+    color: var(--primary-10); 
+    cursor: pointer; 
+}
+  
+.default-two-white, 
+.default-three-white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-color: var(--primary-10);
+    border-radius: 5px;
+    border: 2px solid;
+    gap: 8px;
+    width: 6vw;
+    color: var(--primary-10);
+    height: 5vh;
+    cursor: pointer; 
+}
+
+.default-two-white:hover,
+.default-three-white:hover{
+    background-color: var( --neutral-gray);   
+}
+
+.default-two-white:active,
+.default-three-white:active{
+    transform: translate(2px, 2px, 2px);
+   box-shadow: 1px 1px 3px blue;
+}
+
+.default-three-white:disabled{
+    background-color: var(--neutral-gray);
+}
+
+/*----------------WHITE------------------*/
+
+/*----------------RED------------------*/
+.default-one-red{
+    border-radius: 5px;
+    background-color: var(--red);
+    border: 2px solid;
+    border-color: var(--red);
+    width: 4vw;
+    height: 5vh;
+    color: var(--neutral); 
+    cursor: pointer;  
+}
+  
+.default-two-red, 
+.default-three-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--red);
+    border-color: var(--red);
+    border-radius: 5px;
+    border: 0px;
+    gap: 8px;
+    width: 6vw;
+    color: var(--neutral);
+    height: 5vh;
+    cursor: pointer; 
+}
+
+.default-two-red:hover,
+.default-three-red:hover{
+    background-color: var(--red-10);   
+}
+
+.default-two-red:active,
+.default-three-red:active{
+    transform: translate(2px, 2px, 2px);
+   box-shadow: 1px 1px 3px black;
+}
+
+.default-three-red:disabled{
+    background-color: var(--neutral-gray);
+}
+/*----------------RED------------------*/
+
+/*----------------Green------------------*/
+.default-one-green{
+    border-radius: 5px;
+    background-color:var(--green);
+    border: 2px solid;
+    border-color: var(--green);
+    width: 4vw;
+    height: 5vh;
+    color: var(--black);  
+    cursor: pointer; 
+}
+  
+.default-two-green, 
+.default-three-green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--green);
+    border-color: var(--green);
+    border-radius: 5px;
+    border: 0px;;
+    gap: 8px;
+    width: 6vw;
+    color: var(--black);
+    height: 5vh;
+    cursor: pointer; 
+}
+
+.default-two-green:hover,
+.default-three-green:hover{
+    background-color: var(--green-10); 
+    color: var(--neutral);  
+}
+
+.default-two-green:active,
+.default-three-green:active{
+    transform: translate(2px, 2px, 2px);
+   box-shadow: 1px 1px 3px black;
+}
+
+.default-three-green:disabled{
+    background-color: var(--neutral-gray);
+}
+/*----------------Green------------------*/
+
+.icon{
+    width: 1rem;
+    height: 1rem;
+}
+
+.form, .form-two{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    gap: 10em;  
+}
+
+.form-two input{
+    border: 1px solid #C23934;
+    
+}
+
+.input-one,
+.input-two,
+.input-three{
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+}
+
+label{
+    font-size: 90%;
+    
+}
+
+input{
+    width: 100%;
+    height: 30%;
+    border: 1px solid var(--neutral-gray);
+    border-radius: 3px;
+}
+
+.input-two{
+    display: flex;
+    position: relative;  
+}
+
+.input-three input{
+    padding-left: 10%;
+}
+
+.icon-search{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 10%; 
+}
+
+.icon-search-left{
+    margin-top: 22px;
+    margin-left: 0.5% ;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+}
+
+p{
+    font-size: 10px;
+    color: var(--red);
+    margin-top: 1px;
+}

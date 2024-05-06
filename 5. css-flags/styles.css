@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --page-background: #222;
+    --flag-width: 300px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: var(--page-background);
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.flag {
+    width: var(--flag-width);
+    aspect-ratio: 4/3;
+    background: gainsboro;
+    position: relative;
+
+}
+
+
+.flag_title {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.flag--italy {
+    background-color: #F4F9FF;
+    position: relative;
+}
+
+.flag--italy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    background: #008C45;
+}
+
+.flag--italy::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 33%;
+    height: 100%;
+    background-color:#CD212A;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+.flag--ukraine {
+    background: #FFDD00; 
+    position: relative;
+}
+
+.flag--ukraine::before {
+    content: '';
+    position: absolute; 
+    width: 100%; 
+    height: 50%;
+    background-color: #0057B7;
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+.flag--kuwait {
+    position: relative;
+    display: block;
+    background: linear-gradient(to bottom,
+    #007A3D 33.3%,
+    #FFFFFF 33.3%,
+    #FFFFFF 66.6%,
+    #CE1126 66.6%
+    );  
+    
+}
+
+.flag--kuwait::before {
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; 
+    height: 100%;
+    background: black;   
+    clip-path: polygon(0 0, 85% 33%, 85% 67%, 0% 100%);
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+
+.flag--bangladesh{
+    content:"";
+    position: relative;
+    background: #007A3D;
+}
+
+.flag--bangladesh::after{
+    content: "";
+    top:25%;
+    left:25%;
+    right: 25%;
+    bottom:25%;
+    align-self:center;
+    position:absolute;
+    width: 150px;
+    height:150px;
+    border-radius:80%;
+    background-color:#f42a41;
+  
+}
+
+
+/* ---------------------------------------------------------------------- */
+.flag--japan{
+    content:"";
+    position: relative;
+    background: white;
+}
+
+.flag--japan::after{
+    content: "";
+    top:15%;
+    left:25%;
+    right: 15%;
+    bottom:15%;
+    align-self:center;
+    position:absolute;
+    width: 150px;
+    height:150px;
+    border-radius:80%;
+    background-color:#f42a41;
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* Greece */
+/* ---------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------- */
+/* Portugal */
+/* ---------------------------------------------------------------------- */

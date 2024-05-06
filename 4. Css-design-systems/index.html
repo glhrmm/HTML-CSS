@@ -1,0 +1,115 @@
+<!-- 
+	Documentation: 
+	https://www.figma.com/file/udWyes5Zfj14qQDmD6oUzL/Edit---Design-Systems?type=design&node-id=2%3A783&mode=dev&t=RszSJCDWvtv4ecS1-1
+ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Design System</title>
+		<link rel="stylesheet" href="./globals.css">		
+	</head>
+	<body>
+		<div class="wrapper">
+			<h3 class="wrapper__title">Avatars</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<div class="avatar">
+						<img class="large" src="./assets/user.jpeg" alt="user.lrg">
+						<img class="medium" src="./assets/user.jpeg" alt="user.mdm">
+						<img class="small" src="./assets/user.jpeg" alt="user.sml">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<h3 class="wrapper__title">Buttons</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<section class="buttons">
+						<div class="blue">
+							<div class="default">								
+								<button class="default-one-blue">Label</button>
+								<button class="default-two-blue"><i class="icon" data-feather="zap"></i>Label</button>
+								<button class="default-three-blue">Label<i class="icon" data-feather="zap"></i></button>	
+							</div>														
+						</div>
+
+						<div class="white">
+							<div class="default">
+								<button class="default-one-white">Label</button>
+								<button class="default-two-white"><i class="icon" data-feather="zap"></i>Label</button>
+								<button class="default-three-white">Label<i class="icon" data-feather="zap"></i></button>	
+							</div>					
+						</div>
+
+						<div class="red">
+							<div class="default">
+								<button class="default-one-red">Label</button>
+								<button class="default-two-red"><i class="icon" data-feather="zap"></i>Label</button>
+								<button class="default-three-red">Label<i class="icon" data-feather="zap"></i></button>	
+							</div>
+						</div>
+
+						<div class="green">
+							<div class="default">
+								<button class="default-one-green">Label</button>
+								<button class="default-two-green"><i class="icon" data-feather="zap"></i>Label</button>
+								<button class="default-three-green">Label<i class="icon" data-feather="zap"></i></button>	
+							</div>							
+						</div>		
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<h3 class="wrapper__title">Inputs</h3>
+			<div class="wrapper__content">
+				<div class="flex">
+					<div class="form">						
+						<div class="input-one">
+							<label for="input-field">Field Label</label>					  
+							<input type="text" name="input-field" placeholder="Placeholder">					  
+						</div>
+						<div class="input-two">
+							<label for="input-field">Field Label</label>					  
+							<input type="text"name="input-field" placeholder="Placeholder">					  
+							<i class="icon-search" data-feather="search"></i>
+						</div>
+						<div class="input-three">
+							<label for="input-field">Field Label</label>					  
+							<input  type="text"name="input-field" placeholder="Placeholder">
+							<i class="icon-search-left" data-feather="search"></i>					  
+						</div>			
+					</div>
+					<div class="form-two">						
+						<div class="input-one">
+							<label for="input-field">Field Label</label>					  
+							<input type="text" name="input-field" placeholder="Placeholder">
+							<p>Error Message</p>							
+						</div>
+						<div class="input-two">
+							<label for="input-field">Field Label</label>					  
+							<input type="text"name="input-field" placeholder="Placeholder">
+							<i class="icon-search" data-feather="search"></i>
+							<p>Error Message</p>					  
+						</div>
+						<div class="input-three">
+							<label for="input-field">Field Label</label>					  
+							<input type="text"name="input-field" placeholder="Placeholder">
+							<i class="icon-search-left" data-feather="search"></i>
+							<p>Error Message</p>					  
+						</div>						
+					</div>	
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace();
+	</script>
+</html>

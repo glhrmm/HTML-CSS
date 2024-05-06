@@ -1,0 +1,140 @@
+html, body{
+    background: rgb(176,16,88);
+    background: linear-gradient(105deg, rgba(176,16,88,1) 30%, rgba(103,22,177,1) 70%);
+    height: 100vh; 
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center; 
+    font-family: 'Inconsolata';
+}    
+
+
+  
+  
+  
+
+
+.card-content{  
+    width: 25vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.card-top{
+    height: 80%;
+    width: 100%;
+    background-image: linear-gradient(to right top, #ff0202, #ff2200, #ff6900, #ff8300, #ff9b00); 
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    gap: 40%;
+    
+}
+
+.card-logo{
+    display: flex;
+    width:30%;
+    height:40%;
+    padding: 3%;
+}
+.card-price{
+    font-size: 20px;
+    color: white;
+    padding: 3%;
+    
+}
+
+.card-text{
+    position: relative;
+    color: white;
+    font-size: 85%; 
+    
+}
+
+.card-description, .card-title{ 
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 0;
+}
+
+.card-backdrop{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 18vw;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    opacity: 40%;
+    
+}
+
+
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.btn{
+    width: 40%;
+    height: 40px; 
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: blue;
+    color: blue;   
+}
+
+
+.footer-text{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    opacity: 40%;
+}
+
+.image-container {
+    position: absolute;  
+    top: 8%;
+    left: -30%;
+    width: 180%;
+    height: 100%;  
+    z-index: 1;
+}
+
+.image {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%; 
+    border-radius: 15px; 
+    box-shadow: black 10%;
+}
+
+.image img {
+
+    width: 100%;
+    height: auto;
+  
+}
+

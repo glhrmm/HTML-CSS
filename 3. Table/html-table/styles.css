@@ -1,0 +1,12 @@
+table, th, td{
+   border: 1px solid rgb(128, 127, 127);
+   border-collapse: collapse;
+   margin: auto;
+   width: 600px;
+   height: 10px;
+   ;
+}
+
+.head{
+    background-color: rgb(220, 220, 217);   
+}
